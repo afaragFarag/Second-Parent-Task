@@ -1,0 +1,100 @@
+<!--Breadcrumb-->
+<div class="jumbotron">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+  </ol>
+  <span style="font-family: Heebo; font-size: 30px; font-weight: bold;"
+    >Users List</span
+  >
+  <button
+    type="button"
+    class="btn btn-primary btn-lg"
+    data-toggle="modal"
+    data-target="#myModal"
+  >
+    <span>+</span> New User
+  </button>
+</div>
+
+<!--Container-->
+<div class="card userListcard mb-3">
+  <div class="card-body--">
+    <div class="table-stats order-table ov-h">
+      <table class="table ">
+        <thead>
+          <tr>
+            <th class="avatar">{{ displayedColumns[0] }}</th>
+            <th style="width: 75%"></th>
+            <th class="ml-auto">{{ displayedColumns[1] }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td class="avatar">
+              <div>
+                <a href="#"
+                  ><img
+                    style="width: 55px; height: 55px;"
+                    [src]="user.avatar"
+                    alt=""
+                /></a>
+              </div>
+            </td>
+            <td>
+              <span class="name"
+                >{{ user.first_name }} {{ user.last_name }}</span
+              >
+            </td>
+            <td class="ml-auto">
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                data-toggle="modal"
+                data-target="#editModal"
+              >
+                <img
+                  class="btn-image"
+                  src="assets/images/icons/icons-8-edit.png"
+                />
+              </button>
+              <button
+                type="button"
+                style="margin-left: 15px"
+                class="btn btn-outline-primary"
+                data-toggle="modal"
+                data-target="#deleteModal"
+              >
+                <img
+                  class="btn-image"
+                  src="assets/images/icons/icons-8-delete.png"
+                />
+              </button>
+              <button type="button" style="margin-left: 40px" class="btn">
+                <img
+                  class="btn-image"
+                  src="assets/images/icons/icons-8-right-4.png"
+                />
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Add Modal -->
+<div class="modal" id="myModal" role="dialog">
+  <app-user-add></app-user-add>
+</div>
+
+<!-- Edit Modal -->
+<div class="modal" id="editModal" role="dialog">
+  <app-user-update></app-user-update>
+</div>
+
+<!-- delete Modal -->
+<div class="modal" id="deleteModal" role="dialog">
+  <app-user-delete></app-user-delete>
+</div>

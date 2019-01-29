@@ -1,0 +1,51 @@
+<!-- Modal content-->
+
+<form [formGroup]="userForm" (ngSubmit)="addUser()">
+  <div class="modal-dialog">
+    <div class="modal-content-addUser">
+      <div class="modal-header-addUser">
+        <div class="round-img-addUser">
+          <a href="#"
+            ><img
+              class="rounded-circle-addUser"
+              style="width: 30px; height: 30px"
+              src="/assets/images/avatar/icons-8-user@2x.png"
+              alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label class="col-form-label-addUser" for="inputDefault">Name</label>
+          <input
+            type="text"
+            class="form-control-addUser"
+            placeholder="Name"
+            formControlName="name"
+          />
+        </div>
+        <div class="form-group">
+          <label class="col-form-label-addUser" for="inputDefault"
+            >Job Title</label
+          >
+          <input
+            type="text"
+            class="form-control-addUser"
+            placeholder="Job Title"
+            formControlName="jobTitle"
+          />
+        </div>
+      </div>
+      <div class="modal-footer-addUser">
+        <button
+          type="button"
+          data-dismiss="modal"
+          class="btn btn-outline-primary-addUser"
+        >
+          Cancel
+        </button>
+        <button type="button" class="btn btn-primary-addUser">Add</button>
+      </div>
+    </div>
+  </div>
+</form>

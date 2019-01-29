@@ -1,0 +1,26 @@
+.modal-content-userDelete {
+  width: 363px;
+  height: 171px;
+}
+.confirm {
+  font-family: Heebo;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #7f8c8d;
+  text-align: center;
+}
+.userToDelete {
+  font-family: Heebo;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #34495e;
+  text-align: center;
+}

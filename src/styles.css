@@ -1,1 +1,222 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Heebo';
+  src: url('/assets/fonts/Heebo-Regular.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+.bg-primary {
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff !important;
+}
+
+.logo {
+  width: 124px;
+  height: 40px;
+  object-fit: contain;
+  position: absolute;
+  top: 15px;
+  left: 135px;
+}
+
+.nav-link {
+  font-family: Heebo;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #34495e !important;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+
+.active {
+  border-radius: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: #8e44ad !important;
+}
+
+.bg-primary .navbar-nav .active > .nav-link {
+  color: #ffffff !important;
+  padding: 9px 25px !important;
+}
+
+.ml-auto {
+  margin-right: 135px;
+}
+
+.card {
+  background-repeat: no-repeat;
+  width: 767px;
+  height: 567px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  margin: 30px auto auto auto;
+}
+
+.card-login {
+  background-image: url(/assets/images/rectangle-copy.png);
+}
+
+.card-login-body {
+  padding-top: 135px;
+  padding-left: 378px;
+}
+
+.card-title {
+  font-family: Heebo;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #34495e;
+}
+
+.Spaces {
+  color: #8e44ad;
+}
+
+.card-text {
+  width: 315px;
+  height: 22px;
+  font-family: Heebo;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #7f8c8d;
+}
+
+.col-form-label {
+  font-family: Heebo;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #7f8c8d;
+}
+
+.form-control {
+  width: 374px;
+  height: 36px;
+  border: none;
+  border: solid 1px #ccc;
+  border-radius: 3px;
+}
+
+.btn-primary {
+  background-color: #8e44ad;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border-style: none;
+  font-family: Heebo;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 9px 20px;
+  height: 40px;
+  float: right;
+}
+
+.btn-link {
+  color: #8e44ad;
+}
+
+.breadcrumb {
+  padding: 0;
+}
+
+.breadcrumb-item {
+  font-family: Heebo;
+  font-size: 12px;
+}
+
+.breadcrumb-item a {
+  color: #8e44ad !important;
+}
+
+.jumbotron {
+  padding: 15px 135px 15px 135px;
+}
+.userListcard {
+  width: 1170px;
+  height: auto;
+}
+
+table th {
+  font-family: Heebo;
+  font-size: 12px;
+  font-weight: 500;
+  color: #7f8c8d;
+}
+.table {
+  margin: 30px;
+  width: -webkit-fill-available;
+  border-color: transparent !important;
+  border-style: none !important;
+}
+.table thead tr,
+.table tbody tr {
+  height: 85px !important;
+}
+.table thead th {
+  border: none;
+}
+.table th,
+.table td {
+  border-top: 1px solid #dedede;
+}
+.name {
+  width: 94px;
+  height: 22px;
+  font-family: Heebo;
+  font-size: 15px;
+  font-weight: 600 !important;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #34495e;
+}
+.btn-outline-primary {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid #8e44ad;
+}
+.btn-image {
+  margin-left: -5px;
+  margin-top: -11px;
+  position: relative;
+}
+.round-img {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  background-color: #7f8c8d;
+}
+.rounded-circle {
+  margin-left: 33%;
+  margin-top: 33%;
+  position: relative;
+}
+
+.modal-backdrop {
+  background-color: #00000091 !important;
+}

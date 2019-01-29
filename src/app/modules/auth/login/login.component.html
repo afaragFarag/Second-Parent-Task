@@ -1,0 +1,46 @@
+<form
+  [formGroup]="loginForm"
+  (ngSubmit)="login()"
+  class="card-body card-login-body"
+>
+  <h4 class="card-title">Welcome back!</h4>
+  <p class="card-text">
+    Please login to access your <span class="Spaces">Spaces</span> Dashboard
+  </p>
+
+  <div class="form-group">
+    <label class="col-form-label" for="username">Username</label>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Username"
+      id="username"
+      formControlName="username"
+    />
+    <label
+      style="color:red"
+      *ngIf="loginForm.controls.username.errors && submitted"
+    >
+      invalid username
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label class="col-form-label" for="password">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      placeholder="Password"
+      id="password"
+      formControlName="password"
+    />
+    <label
+      style="color:red"
+      *ngIf="loginForm.controls.username.errors && submitted"
+    >
+      invalid password
+    </label>
+  </div>
+  <button type="button" class="btn btn-link">Forgot password?</button>
+  <button type="submit" class="btn btn-primary">LOGIN</button>
+</form>

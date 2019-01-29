@@ -1,0 +1,75 @@
+.modal-content-addUser {
+  margin-top: 200px;
+  width: 363px;
+  height: 294px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-left: 55px;
+}
+
+.col-form-label-addUser {
+  font-family: Heebo;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #7f8c8d;
+}
+
+.form-control-addUser {
+  width: 333px;
+  height: 36px;
+  border: none;
+  border: solid 1px #ccc;
+  border-radius: 3px;
+}
+
+.btn-primary-addUser {
+  background-color: #8e44ad;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border-style: none;
+  font-family: Heebo;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 9px 60px;
+  height: 40px;
+}
+
+.btn-outline-primary-addUser {
+  background-color: #ffffff;
+  border: 1px solid #8e44ad;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  font-family: Heebo;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 9px 50px;
+  height: 40px;
+  color: #8e44ad;
+}
+.modal-footer-addUser {
+  text-align: center;
+  border-style: none;
+  padding: 0;
+}
+.modal-header-addUser {
+  border-style: none;
+}
+.round-img-addUser {
+  position: absolute;
+  left: 38%;
+  top: -25%;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #7f8c8d;
+}
+
+.rounded-circle-addUser {
+  margin-left: 33%;
+  margin-top: 33%;
+  position: relative;
+}
